@@ -1,0 +1,5 @@
+drush_make.download.inc /usr/share/drush/commands/drush_make
+drush_make.drush.inc /usr/share/drush/commands/drush_make
+drush_make.generate.inc /usr/share/drush/commands/drush_make
+drush_make.project.inc /usr/share/drush/commands/drush_make
+drush_make.utilities.inc /usr/share/drush/commands/drush_make

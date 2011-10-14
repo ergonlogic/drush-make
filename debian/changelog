@@ -1,0 +1,6 @@
+drush-make (2.3-0~build1) experimental; urgency=low
+
+  * Initial release (Closes: #644519)
+  * This is my first Debian package.
+
+ -- Christopher Gervais <chris@ergonlogic.com>  Thu, 13 Oct 2011 22:07:08 -0400

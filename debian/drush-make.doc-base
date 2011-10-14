@@ -1,0 +1,10 @@
+Document: drush-make
+Title: Debian Drush Make Manual
+Author: Dmitri Gaskin
+Abstract: This manual describes what Drush Make is
+ and how it can be used to build Drupal code-bases
+ on Debian systems.
+Section: Web development
+
+Format: text
+Files: /usr/share/doc/drush-make/README.txt

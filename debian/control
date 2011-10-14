@@ -1,0 +1,34 @@
+Source: drush-make
+Section: universe/php
+Priority: optional
+Maintainer: Christopher Gervais <chris@ergonlogic.com>
+Build-Depends: debhelper (>= 7.0.50~)
+Standards-Version: 3.8.3
+Vcs-Git: git://drupalcode.org/project/drush_make.git
+Vcs-browser: http://drupalcode.org/project/drush_make.git
+Homepage: https://drupal.org/project/drush_make
+
+Package: drush-make
+Architecture: all
+Depends: drush (>= 4.5)
+Description: Drupal source code deployment tool
+ Drush Make is an extension to drush that can create a ready-to-use
+ Drupal code-base, pulling sources from various locations. It does this by
+ parsing a flat text file (similar to a Drupal .info file) and
+ downloading the sources it describes. In practical terms, this means
+ that it is possible to distribute a complicated Drupal distribution as
+ a single text file.
+ .
+ Among Drush Make's capabilities are:
+ .
+ * Downloading Drupal core, as well as contrib modules from
+   drupal.org.
+ * Checking code out from CVS, SVN, git, and bzr repositories.
+ * Getting plain .tar.gz and .zip files (particularly useful for
+   libraries that can not be distributed directly with Drupal core or
+   modules).
+ * Fetching and applying patches.
+ * Fetching modules, themes, and installation profiles, but also
+   external libraries.
+ * Drush make does not turn modules on automatically: it only
+   assembles Drupal directories -- it does not touch a database.
