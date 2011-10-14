@@ -1,0 +1,59 @@
+This work was packaged for Debian by:
+
+    Christopher Gervais <chris@ergonlogic.com> on Thu, 13 Oct 2011 22:07:08 -0400
+
+It was downloaded from <http://drupal.org/project/drush_make>
+
+Upstream Author(s):
+
+    Dmitri Gaskin <todo>
+
+Copyright:
+
+    Copyright (C) 2009-2011 Dmitri Gaskin
+    <todo: add other maintainers?>
+
+License:
+
+    GPL version 2
+
+The Debian packaging is:
+
+    Copyright (C) 2011 Christopher Gervais <chris@ergonlogic.com>
+
+    This package is free software; you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation; either version 2 of the License, or
+    (at your option) any later version.
+
+    This package is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this package; if not, write to the Free Software
+    Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301 USA
+
+Drush Make is a Drupal module, and as all Drupal.org hosted code, it is
+GPL2+, according to the Drupal association:
+
+http://drupal.org/licensing/faq
+
+"Drupal and all contributed files hosted on Drupal.org are licensed
+under the GNU General Public License, version 2 or later. That means you
+are free to download, reuse, modify, and distribute any files hosted on
+Drupal.org's Git repository under the terms of either the GPL version 2
+or version 3, and to run Drupal in combination with any code with any
+license that is compatible with either versions 2 or 3, such as the
+Affero General Public License (AGPL) version 3."
+
+On Debian systems, the complete text of the GNU General
+Public License can be found in `/usr/share/common-licenses/GPL-2'.
+
+The Debian packaging is:
+
+     Copyright (c) 2011 Christopher Gervais <chris@ergonlogic.com>
+
+     and is licensed under the GPL, see above.
+
