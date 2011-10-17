@@ -1,4 +1,4 @@
-drush-make (2.3-0~build1) experimental; urgency=low
+drush-make (2.3-0~build2) unstable; urgency=low
 
   * Initial release (Closes: #644519)
   * This is my first Debian package.

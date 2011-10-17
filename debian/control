@@ -1,5 +1,5 @@
 Source: drush-make
-Section: universe/php
+Section: php
 Priority: optional
 Maintainer: Christopher Gervais <chris@ergonlogic.com>
 Build-Depends: debhelper (>= 7.0.50~)
@@ -21,14 +21,14 @@ Description: Drupal source code deployment tool
  .
  Among Drush Make's capabilities are:
  .
- * Downloading Drupal core, as well as contrib modules from
-   drupal.org.
- * Checking code out from CVS, SVN, git, and bzr repositories.
- * Getting plain .tar.gz and .zip files (particularly useful for
-   libraries that can not be distributed directly with Drupal core or
-   modules).
- * Fetching and applying patches.
- * Fetching modules, themes, and installation profiles, but also
-   external libraries.
- * Drush make does not turn modules on automatically: it only
-   assembles Drupal directories -- it does not touch a database.
+  * Downloading Drupal core, as well as contrib modules from
+    drupal.org.
+  * Checking code out from CVS, SVN, git, and bzr repositories.
+  * Getting plain .tar.gz and .zip files (particularly useful for
+    libraries that can not be distributed directly with Drupal core or
+    modules).
+  * Fetching and applying patches.
+  * Fetching modules, themes, and installation profiles, but also
+    external libraries.
+  * Drush make does not turn modules on automatically: it only
+    assembles Drupal directories -- it does not touch a database.

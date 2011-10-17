@@ -2,7 +2,7 @@
 .\" First parameter, NAME, should be all caps
 .\" Second parameter, SECTION, should be 1-8, maybe w/ subsection
 .\" other parameters are allowed: see man(7), man(1)
-.TH DRUSH-MAKE SECTION "October 14, 2011"
+.TH DRUSH-MAKE 1 "October 17, 2011"
 .\" Please adjust this date whenever revising the manpage.
 .\"
 .\" Some roff macros, for reference:
@@ -16,7 +16,7 @@
 .\" .sp <n>    insert n+1 empty lines
 .\" for manpage-specific macros, see man(7)
 .SH NAME
-drush-make \- program to do something
+drush-make \- an extension to drush that can create a ready-to-use Drupal code-base
 .SH SYNOPSIS
 .B drush-make
 .RI [ options ] " files" ...
@@ -24,18 +24,15 @@ drush-make \- program to do something
 .B bar
 .RI [ options ] " files" ...
 .SH DESCRIPTION
-This manual page documents briefly the
-.B drush-make
-and
-.B bar
-commands.
+.B Drush Make
+parses a flat text file called a Drush makefile (suffixed with '.make') and downloads the sources it describes. In practical terms, this makes it possible to distribute a complicated Drupal distribution as a single text file.
 .PP
 .\" TeX users may be more comfortable with the \fB<whatever>\fP and
 .\" \fI<whatever>\fP escape sequences to invode bold face and italics,
 .\" respectively.
-\fBdrush-make\fP is a program that...
+.\"\fBdrush-make\fP is a program that...
 .SH OPTIONS
-These programs follow the usual GNU command line syntax, with long
+This program follows the usual GNU command line syntax, with long
 options starting with two dashes (`-').
 A summary of options is included below.
 For a complete description, see the Info files.
@@ -50,8 +47,8 @@ Show version of program.
 .BR baz (1).
 .br
 The programs are documented fully by
-.IR "The Rise and Fall of a Fooish Bar" ,
-available via the Info system.
+.IR the included README.txt
+available online at: http://drupalcode.org/project/drush_make.git/blob_plain/refs/heads/6.x-2.x:/README.txt.
 .SH AUTHOR
 Drush Make was written by Dmitri Gaskin.
 .PP
