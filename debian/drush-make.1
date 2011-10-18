@@ -16,39 +16,91 @@
 .\" .sp <n>    insert n+1 empty lines
 .\" for manpage-specific macros, see man(7)
 .SH NAME
-drush-make \- an extension to drush that can create a ready-to-use Drupal code-base
+drush-make \- an extension to drush that creates a ready-to-use Drupal platform
 .SH SYNOPSIS
 .B drush-make
-.RI [ options ] " files" ...
+.RI [ options ] " <makefile> <build_path>"
 .br
-.B bar
-.RI [ options ] " files" ...
+.\".B bar
+.\".RI [ options ] " files" ...
 .SH DESCRIPTION
 .B Drush Make
-parses a flat text file called a Drush makefile (suffixed with '.make') and downloads the sources it describes. In practical terms, this makes it possible to distribute a complicated Drupal distribution as a single text file.
+parses a flat text file called a Drush makefile (suffixed with '.make') and
+downloads the sources it describes. In practical terms, this makes it possible
+to distribute a complicated Drupal distribution as a single text file.
 .PP
 .\" TeX users may be more comfortable with the \fB<whatever>\fP and
 .\" \fI<whatever>\fP escape sequences to invode bold face and italics,
 .\" respectively.
 .\"\fBdrush-make\fP is a program that...
+.SH ARGUMENTS
+.TP
+.B makefile
+Filename of the makefile to use for this build.
+.TP
+.B build_path
+Optional. The path at which to build the makefile. Defaults to current directory.
+.PP
 .SH OPTIONS
 This program follows the usual GNU command line syntax, with long
 options starting with two dashes (`-').
 A summary of options is included below.
-For a complete description, see the Info files.
+For a complete description, see the README.txt.
 .TP
 .B \-h, \-\-help
 Show summary of options.
 .TP
-.B \-v, \-\-version
-Show version of program.
+.B \-\-version
+Print the version and exit.
+.TP
+.B \-\-contrib-destination=path
+Specify a path under which modules and themes should be placed. Defaults to sites/all.
+.TP
+.B \-\-force-complete
+Force a complete build even if errors occur.
+.TP
+.B \-\-ignore-checksums
+Ignore md5 checksums for downloads.
+.TP
+.B \-\-md5
+Output an md5 hash of the current build after completion.
+.TP
+.B \-\-no-clean
+Leave temporary build directories in place instead of cleaning up after completion.
+.TP
+.B \-\-no-core
+Do not require a Drupal core project to be specified.
+.TP
+.B \-\-no-patch-txt
+Do not write a PATCHES.txt file in the directory of each patched project.
+.TP
+.B \-\-prepare-install
+Prepare the built site for installation. Generate a properly permissioned settings.php and files directory.
+.TP
+.B \-\-tar
+Generate a tar archive of the build. The output filename will be [build path].tar.gz.
+.TP
+.B \-\-test
+Run a temporary test build and clean up.
+.TP
+.B \-\-translations=languages
+Retrieve translations for the specified comma-separated list of language(s) if available for all projects.
+.TP
+.B \-\-working-copy
+Where possible, retrieve a working copy of projects from their respective repositories.
+.TP
+.B \-\-download-mechanism
+How to download files. Should be autodetected, but this is an override if it doesn't work. Options are "curl" and "drush_make" (a native download method).
+.PP
 .SH SEE ALSO
-.BR bar (1),
-.BR baz (1).
+.BR drush (1)
 .br
-The programs are documented fully by
-.IR the included README.txt
-available online at: http://drupalcode.org/project/drush_make.git/blob_plain/refs/heads/6.x-2.x:/README.txt.
+This program is documented fully by the included README.txt and EXAMPLE.make
+files which are also available online at:
+.br
+* http://drupalcode.org/project/drush_make.git/blob_plain/refs/heads/6.x-2.x:/README.txt
+.br
+* http://drupalcode.org/project/drush_make.git/blob_plain/refs/heads/6.x-2.x:/EXAMPLE.make
 .SH AUTHOR
 Drush Make was written by Dmitri Gaskin.
 .PP
